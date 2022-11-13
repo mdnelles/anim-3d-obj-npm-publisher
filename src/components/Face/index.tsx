@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import { FaceProps } from "./FaceInter";
+import { FaceProps } from "./face";
 
 const Face = (props: FaceProps): JSX.Element => {
   let {
@@ -53,7 +53,7 @@ const Face = (props: FaceProps): JSX.Element => {
   } else if (faceType === "topr") {
     height = +depth;
     if (!!depth) tranz = +depth / 2;
-    //let offset = depth / 2;
+    let offset = depth / 2;
     transform = `transform: rotateX(90deg) translateZ(${tranz}px );  `;
   } else {
     if (height > width && !depth) {
@@ -69,7 +69,7 @@ const Face = (props: FaceProps): JSX.Element => {
     transform = `transform: rotateY(-90deg) translateZ(${tranz}px);`;
   }
 
-  //const BackFlip: any = styled.section``;
+  const BackFlip: any = styled.section``;
 
   const Specs: any = styled.section`
     ${styles}

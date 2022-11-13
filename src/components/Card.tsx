@@ -1,8 +1,8 @@
 import React from "react";
 import { AnimWrap } from "./styles/AnimWrap";
 import { SceneStyle } from "./styles/Scene";
-import { ObjProps } from "./Faces/FaceInter";
-import Face from "./Faces/Face";
+import { ObjProps } from "./Face/face";
+import Face from "./Face";
 import { ObjWrapper } from "./styles/Global";
 
 export const Card = (props: ObjProps): any => {

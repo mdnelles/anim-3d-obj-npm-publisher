@@ -1,5 +1,6 @@
-export * from "./Button";
-export * from "./Faces/Face";
-export * from "./Card";
-export * from "./Cuboid";
-export * from "./Ribbon";
+import Face from "./Face";
+import { Cuboid } from "./Cuboid";
+import { Card } from "./Card";
+import { Ribbon } from "./Ribbon";
+
+export { Face, Cuboid, Card, Ribbon };
