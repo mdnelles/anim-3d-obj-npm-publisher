@@ -121,34 +121,3 @@ const custom: object = {
       },
 ```
 
-## Render
-
-and
-
-```typescript
-<Cuboid
-   width={250}
-   height={300}
-   depth={250}
-   perspective={800}
-   perspectiveOrigin='50% 50%'
-   zIndex={10}
-   anim1Specs={anim1Specs}
-   anim2Specs={anim2Specs}
-   custom={custom}
-   faces={faceprops}
-   global={global}
-/>
-```
-
-will produce the following
-
-![Logo](https://raw.githubusercontent.com/mdnelles/objs-local/main/img.png?token=GHSAT0AAAAAABQVNJ4VATWQM4SI3LXSTDZWYVDOL7Q)
-
-## Authors
-
--  [@mdnelles](https://github.com/mdnelles)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
