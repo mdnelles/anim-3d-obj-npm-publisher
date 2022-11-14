@@ -1,6 +1,7 @@
 
 
 
+
 {
    "name": "anim-3d-obj",
    "repository": {
@@ -8,7 +9,7 @@
       "url": "https://github.com/mdnelles/anim-3d-objs"
    },
    "homepage": "https://github.com/mdnelles/anim-3d-objs",
-    "version": "1.1.43",
+    "version": "1.1.44",
    "description": "React library for creating 3D objects quickly.  Also these objects can be animated",
    "main": "dist/cjs/index.js",
    "module": "dist/esm/index.js",
