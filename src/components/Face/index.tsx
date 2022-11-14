@@ -54,7 +54,10 @@ export default (props: FaceProps): JSX.Element => {
     height = +depth;
     if (!!depth) tranz = +depth / 2;
     let offset = depth / 2;
-    transform = `transform: rotateX(90deg) translateZ(${tranz}px );  `;
+    //translate3d(tx, ty, tz)
+    transform = `transform: rotateX(90deg) translateZ(${tranz}px) translateY(-${
+      tranz * 2
+    }px)  `;
   } else {
     if (height > width && !depth) {
       tranz = -(+height / 2 - +width);

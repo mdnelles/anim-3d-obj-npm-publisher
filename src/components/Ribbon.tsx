@@ -18,6 +18,7 @@ export const Ribbon = (props: ObjProps): any => {
     perspective,
     perspectiveOrigin,
     zIndex,
+    showCenterDiv = false,
   } = props;
 
   const buildFace = (faceType: any): any => {
@@ -45,7 +46,7 @@ export const Ribbon = (props: ObjProps): any => {
     >
       <AnimWrap animSpecs={anim1Specs}>
         <AnimWrap animSpecs={anim2Specs}>
-          <ObjWrapper>
+          <ObjWrapper showCenterDiv={showCenterDiv}>
             {!!faces && !!faces.bottom ? buildFace("bottom") : null}
             {!!faces && !!faces.back ? buildFace("back") : null}
             {!!faces && !!faces.top ? buildFace("topr") : null}

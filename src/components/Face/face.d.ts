@@ -32,6 +32,7 @@ export interface ObjProps {
   custom?: object | string | undefined;
   perspective?: string | number | undefined;
   perspectiveOrigin?: string | undefined;
+  showCenterDiv?: string | number | boolean | undefined;
   tranz?: number | undefined;
   txt?: string | any;
   width?: number;
