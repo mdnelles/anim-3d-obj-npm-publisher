@@ -5,7 +5,7 @@ The program does the leg work with regard to calculating translationZ depth and 
 
 ## Examples
 
--  [6 sided Cuboid - animate X360 Y360](https://codesandbox.io/s/anim-3d-obj-all-sides-simple-bf67yg)
+-  [6 sided Cuboid - animate X360 Y360]([https://codesandbox.io/s/anim-3d-obj-all-sides-simple-bf67yg](https://codesandbox.io/s/anim-3d-obj-all-sides-simple-bf67yg-tzr2v6))
 -  [3 sided Object - animate y-axis](https://codesandbox.io/s/anim-3d-obj-3-sides-wobble-y-axis-wglkms)
 -  [Double box spin](https://codesandbox.io/s/react-anim-3d-double-box-spin-vbdhg2)
 -  [2 sided object with animation wobble](https://codesandbox.io/s/anim-3d-obj-wobblex-mmidkg)
