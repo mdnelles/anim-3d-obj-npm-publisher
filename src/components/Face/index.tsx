@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import { FaceProps } from "./face";
 
-export default (props: FaceProps): JSX.Element => {
+export default function (props: FaceProps): JSX.Element {
   let {
     depth = 10,
     faceType,
@@ -83,4 +83,4 @@ export default (props: FaceProps): JSX.Element => {
   `;
 
   return <Specs>{body}</Specs>;
-};
+}

@@ -1,11 +1,11 @@
 import React from "react";
-import { AnimWrap } from "./styles/AnimWrap";
-import { SceneStyle } from "./styles/Scene";
-import { ObjProps } from "./Face/face";
-import Face from "./Face";
-import { ObjWrapper } from "./styles/Global";
+import { AnimWrap } from "../styles/AnimWrap";
+import { SceneStyle } from "../styles/Scene";
+import { ObjProps } from "../Face/face";
+import Face from "../Face";
+import { ObjWrapper } from "../styles/Global";
 
-export const Ribbon = (props: ObjProps): any => {
+export default function (props: ObjProps): JSX.Element {
   let {
     anim1Specs,
     anim2Specs,
@@ -19,7 +19,6 @@ export const Ribbon = (props: ObjProps): any => {
     perspective,
     perspectiveOrigin,
     zIndex,
-    showCenterDiv = false,
   } = props;
 
   const buildFace = (faceType: any): any => {
@@ -47,13 +46,16 @@ export const Ribbon = (props: ObjProps): any => {
     >
       <AnimWrap animSpecs={anim1Specs}>
         <AnimWrap animSpecs={anim2Specs}>
-          <ObjWrapper showCenterDiv={showCenterDiv}>
-            {!!faces && !!faces.bottom ? buildFace("bottom") : null}
+          <ObjWrapper>
+            {!!faces && !!faces.front ? buildFace("front") : null}
+            {!!faces && !!faces.right ? buildFace("right") : null}
             {!!faces && !!faces.back ? buildFace("back") : null}
-            {!!faces && !!faces.top ? buildFace("topr") : null}
+            {!!faces && !!faces.left ? buildFace("left") : null}
+            {!!faces && !!faces.top ? buildFace("top") : null}
+            {!!faces && !!faces.bottom ? buildFace("bottom") : null}
           </ObjWrapper>
         </AnimWrap>
       </AnimWrap>
     </SceneStyle>
   );
-};
+}

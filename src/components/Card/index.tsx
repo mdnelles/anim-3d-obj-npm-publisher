@@ -1,11 +1,11 @@
 import React from "react";
-import { AnimWrap } from "./styles/AnimWrap";
-import { SceneStyle } from "./styles/Scene";
-import { ObjProps } from "./Face/face";
-import Face from "./Face";
-import { ObjWrapper } from "./styles/Global";
+import { AnimWrap } from "../styles/AnimWrap";
+import { SceneStyle } from "../styles/Scene";
+import { ObjProps } from "../Face/face";
+import Face from "../Face";
+import { ObjWrapper } from "../styles/Global";
 
-export const Card = (props: ObjProps): any => {
+export default function (props: ObjProps): JSX.Element {
   let {
     anim1Specs,
     anim2Specs,
@@ -53,4 +53,4 @@ export const Card = (props: ObjProps): any => {
       </AnimWrap>
     </SceneStyle>
   );
-};
+}
