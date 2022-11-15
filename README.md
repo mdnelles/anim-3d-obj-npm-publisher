@@ -3,9 +3,6 @@
 This project allows a user to create Cuboids of any size simply by entering a set of parameters.  
 The program does the leg work with regard to calculating translationZ depth and config on the fly.
 
--  [GIT HOME](https://github.com/mdnelles/anim-3d-objs-launcher)
--  [NPM HOME](https://www.npmjs.com/package/anim-3d-obj) npm i anim-3d-obj
-
 ## Examples
 
 -  [6 sided Cuboid - animate X360 Y360](https://codesandbox.io/s/anim-3d-obj-all-sides-simple-bf67yg)
