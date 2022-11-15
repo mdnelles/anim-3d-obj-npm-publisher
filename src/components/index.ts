@@ -1,5 +1,2 @@
-export * from "./Button";
+export * from "./Obj";
 export * from "./Face";
-export * from "./Card";
-export * from "./Cuboid";
-export * from "./Ribbon";
