@@ -17,16 +17,18 @@ export interface ObjProps {
   children: any;
   depth?: number;
   global?: { border?: string; bgc?: string; opac?: number | string } | any;
-  faces?:
-    | {
-        front: boolean;
-        back: boolean;
-        left: boolean;
-        right: boolean;
-        top: boolean;
-        bottom: boolean;
-      }
-    | undefined;
+  faces: {
+    front?: boolean | undefined;
+    back?: boolean | undefined;
+    left?: boolean | undefined;
+    right?: boolean | undefined;
+    top?: boolean | undefined;
+    top_rear?: boolean | undefined;
+    top_front?: boolean | undefined;
+    bottom?: boolean | undefined;
+    bottom_rear?: boolean | undefined;
+    bottom_front?: boolean | undefined;
+  };
 
   height?: number | string;
   custom?: object | string | undefined;

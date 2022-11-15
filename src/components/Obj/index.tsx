@@ -12,7 +12,7 @@ export default function (props: ObjProps): JSX.Element {
     width = 5,
     height = 5,
     depth = 5,
-    faces,
+    faces = { front: true },
     global = {},
     custom = {},
     tranz = (+height / 2) | 0,
@@ -53,6 +53,10 @@ export default function (props: ObjProps): JSX.Element {
             {!!faces && !!faces.left ? buildFace("left") : null}
             {!!faces && !!faces.top ? buildFace("top") : null}
             {!!faces && !!faces.bottom ? buildFace("bottom") : null}
+            {!!faces && !!faces.top_rear ? buildFace("top_rear") : null}
+            {!!faces && !!faces.top_front ? buildFace("top_front") : null}
+            {!!faces && !!faces.bottom_rear ? buildFace("bottom_rear") : null}
+            {!!faces && !!faces.bottom_front ? buildFace("bottom_front") : null}
           </ObjWrapper>
         </AnimWrap>
       </AnimWrap>
