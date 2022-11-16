@@ -1,9 +1,10 @@
 import React from "react";
+
+import { ObjWrapper } from "../styles/Global";
 import { AnimWrap } from "../styles/AnimWrap";
 import { SceneStyle } from "../styles/Scene";
 import { ObjProps } from "../Face/face";
 import Face from "../Face";
-import { ObjWrapper } from "../styles/Global";
 
 export default function (props: ObjProps): JSX.Element {
   let {
@@ -21,6 +22,7 @@ export default function (props: ObjProps): JSX.Element {
     zIndex,
   } = props;
 
+  // process config
   const buildFace = (faceType: any): any => {
     return (
       <Face
