@@ -8,7 +8,7 @@ The program does the leg work with regard to calculating translationZ depth and 
 -  [6 sided Cuboid - animate X360 Y360](https://codesandbox.io/s/anim-3d-obj-all-sides-simple-bf67yg-tzr2v6)
 -  [3 sided Object - animate y-axis](https://codesandbox.io/s/anim-3d-obj-3-sides-wobble-y-axis-wglkms)
 -  [Double box spin](https://codesandbox.io/s/react-anim-3d-double-box-spin-vbdhg2)
--  [2 sided object with animation wobble](https://codesandbox.io/s/anim-3d-obj-wobblex-mmidkg)
+-  [Floating Ribbon](https://codesandbox.io/s/cocky-butterfly-ygwkps)
 -  [Parallel divs animated x and y axis in tandem](https://codesandbox.io/s/anim-3d-obj-2-sides-simple-4057y7)
 -  [Spinning Slab](https://codesandbox.io/s/react-anim-3d-pulse-kc8g0f)
 
