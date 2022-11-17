@@ -17,7 +17,7 @@ The program does the leg work with regard to calculating translationZ depth and 
 Animations are optional. Either or both of `anim1Specs` or `anim2Specs` can be applied to the object.
 
 ```typescript
-const anim1Specs: object = {
+const anim1: object = {
    border: "", // while testing reveal the animation wrapper
    degreesHi: -45, // degrees if spin
    degreesLow: 45, // degrees if spin
