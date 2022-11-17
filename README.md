@@ -10,6 +10,7 @@ The program does the leg work with regard to calculating translationZ depth and 
 -  [Double box spin](https://codesandbox.io/s/react-anim-3d-double-box-spin-vbdhg2)
 -  [Floating Ribbon](https://codesandbox.io/s/cocky-butterfly-ygwkps)
 -  [Parallel divs animated x and y axis in tandem](https://codesandbox.io/s/anim-3d-obj-2-sides-simple-4057y7)
+-  [Obj Skeleton](https://codesandbox.io/s/anim-3d-obj-skeleton-5dlk70)
 
 ## Config
 
