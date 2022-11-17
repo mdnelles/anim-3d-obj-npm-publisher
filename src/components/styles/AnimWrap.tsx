@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useEffect } from "react";
 import { AnimStylesProps } from "./Anim";
 import { allAnims } from "./Anims";
 
