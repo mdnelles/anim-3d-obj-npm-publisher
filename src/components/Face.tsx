@@ -1,8 +1,20 @@
 import styled from "styled-components";
 import React from "react";
-import { FaceProps } from "./face";
 
-export default function (props: FaceProps): JSX.Element {
+interface FaceProps {
+  children?: any;
+  depth?: number | any;
+  faceType?: any;
+  custom?: any;
+  global?: any;
+  height?: number | string;
+  id?: string | number | boolean;
+  styles?: object | any;
+  tranz: any;
+  width?: number | string;
+}
+
+export default function Face(props: FaceProps): JSX.Element {
   let {
     depth = 10,
     faceType,

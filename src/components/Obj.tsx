@@ -1,10 +1,39 @@
 import React from "react";
 
-import { ObjWrapper } from "../styles/Global";
-import { AnimWrap } from "../styles/AnimWrap";
-import { SceneStyle } from "../styles/Scene";
-import { ObjProps } from "../Face/face";
-import Face from "../Face";
+import { ObjWrapper } from "./styles/Global";
+import { AnimWrap } from "./styles/AnimWrap";
+import { SceneStyle } from "./styles/Scene";
+import Face from "./Face";
+
+interface ObjProps {
+  anim1Specs?: object | undefined;
+  anim2Specs?: object | undefined;
+  children: any;
+  depth?: number;
+  global?: { border?: string; bgc?: string; opac?: number | string } | any;
+  faces: {
+    front?: boolean | undefined;
+    back?: boolean | undefined;
+    left?: boolean | undefined;
+    right?: boolean | undefined;
+    top?: boolean | undefined;
+    top_rear?: boolean | undefined;
+    top_front?: boolean | undefined;
+    bottom?: boolean | undefined;
+    bottom_rear?: boolean | undefined;
+    bottom_front?: boolean | undefined;
+  };
+
+  height?: number | string;
+  custom?: object | string | undefined;
+  perspective?: string | number | undefined;
+  perspectiveOrigin?: string | undefined;
+  showCenterDiv?: string | number | boolean | undefined;
+  tranz?: number | undefined;
+  txt?: string | any;
+  width?: number;
+  zIndex?: number | undefined;
+}
 
 export default function (props: ObjProps): JSX.Element {
   let {
