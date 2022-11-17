@@ -6,8 +6,8 @@ import { SceneStyle } from "./styles/Scene";
 import Face from "./Face";
 
 interface ObjProps {
-  anim1Specs?: object | undefined;
-  anim2Specs?: object | undefined;
+  anim1?: object | undefined;
+  anim2?: object | undefined;
   children: any;
   depth?: number;
   global?: { border?: string; bgc?: string; opac?: number | string } | any;
@@ -37,8 +37,8 @@ interface ObjProps {
 
 export default function (props: ObjProps): JSX.Element {
   let {
-    anim1Specs,
-    anim2Specs,
+    anim1,
+    anim2,
     width = 5,
     height = 5,
     depth = 5,
@@ -75,8 +75,8 @@ export default function (props: ObjProps): JSX.Element {
       perspectiveOrigin={perspectiveOrigin}
       zIndex={zIndex}
     >
-      <AnimWrap animSpecs={anim1Specs}>
-        <AnimWrap animSpecs={anim2Specs}>
+      <AnimWrap animSpecs={anim1}>
+        <AnimWrap animSpecs={anim2}>
           <ObjWrapper>
             {!!faces && !!faces.front ? buildFace("front") : null}
             {!!faces && !!faces.right ? buildFace("right") : null}
