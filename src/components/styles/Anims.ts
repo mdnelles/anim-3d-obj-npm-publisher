@@ -87,8 +87,8 @@ export const allAnims = (props: AllAnimsProps) => {
   /* ============================= x-axis 0-90, 90-180, 180-270, 270-360 */
   const fwdx09 = keyframes`
     from {
-       -webkit-transform: rotateX(360deg);
-       transform: rotateX(360deg);
+       -webkit-transform: rotateX(0deg);
+       transform: rotateX(0deg);
     }
     to {
        -webkit-transform: rotateX(90deg);
@@ -125,8 +125,8 @@ export const allAnims = (props: AllAnimsProps) => {
   /* ============================== y-axis 0-180 >180 - 360 */
   const fwdy018 = keyframes`
    from {
-       -webkit-transform: rotateY(360deg);
-       transform: rotateY(360deg);
+       -webkit-transform: rotateY(0deg);
+       transform: rotateY(0deg);
    }
    to {
        -webkit-transform: rotateY(180deg);
@@ -145,8 +145,8 @@ export const allAnims = (props: AllAnimsProps) => {
   /* ============================= y-axis 0-90, 90-180, 180-270, 270-360 */
   const fwdy09 = keyframes`
    from {
-      -webkit-transform: rotateY(360deg);
-      transform: rotateY(360deg);
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
    }
    to {
       -webkit-transform: rotateY(90deg);
