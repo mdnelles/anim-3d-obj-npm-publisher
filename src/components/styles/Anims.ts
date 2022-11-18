@@ -96,30 +96,30 @@ export const allAnims = (props: AllAnimsProps) => {
     }`;
   const fwdx918 = keyframes`
     from {
-        -webkit-transform: rotateX(-90deg);
-        transform: rotateX(-90deg);
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
     }
     to {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
     }`;
   const fwdx1827 = keyframes`
     from {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
     }
     to {
-        -webkit-transform: rotateX(-270deg);
-        transform: rotateX(-270deg);
+        -webkit-transform: rotateX(270deg);
+        transform: rotateX(270deg);
     }`;
   const fwdx2736 = keyframes`
     from {
-        -webkit-transform: rotateX(-270deg);
-        transform: rotateX(-270deg);
+        -webkit-transform: rotateX(270deg);
+        transform: rotateX(270deg);
     }
     to {
-        -webkit-transform: rotateX(-360deg);
-        transform: rotateX(-360deg);
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
     }`;
 
   /* ============================== y-axis 0-180 >180 - 360 */
@@ -154,30 +154,30 @@ export const allAnims = (props: AllAnimsProps) => {
    }`;
   const fwdy918 = keyframes`
    from {
-       -webkit-transform: rotateY(-90deg);
-       transform: rotateY(-90deg);
+       -webkit-transform: rotateY(90deg);
+       transform: rotateY(90deg);
    }
    to {
-       -webkit-transform: rotateY(-180deg);
-       transform: rotateY(-180deg);
+       -webkit-transform: rotateY(180deg);
+       transform: rotateY(180deg);
    }`;
   const fwdy1827 = keyframes`
    from {
-       -webkit-transform: rotateY(-180deg);
-       transform: rotateY(-180deg);
+       -webkit-transform: rotateY(180deg);
+       transform: rotateY(180deg);
    }
    to {
-       -webkit-transform: rotateY(-270deg);
-       transform: rotateY(-270deg);
+       -webkit-transform: rotateY(270deg);
+       transform: rotateY(270deg);
    }`;
   const fwdy2736 = keyframes`
    from {
-       -webkit-transform: rotateY(-270deg);
-       transform: rotateY(-270deg);
+       -webkit-transform: rotateY(270deg);
+       transform: rotateY(270deg);
    }
    to {
-       -webkit-transform: rotateY(-360deg);
-       transform: rotateY(-360deg);
+       -webkit-transform: rotateY(360deg);
+       transform: rotateY(360deg);
    }`;
 
   /* ============================= floating */
