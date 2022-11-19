@@ -33,8 +33,8 @@ const anim1 = {
 
 `** ANIMATIONS`
 
--  X360: rotate 360 degrees on the x-axis [example](https://codesandbox.io/s/anim-3d-obj-x360-7kiuhw)
--  Y360: rotate 360 degrees on the y-axis
+-  `X360`: rotate 360 degrees on the x-axis: [demo](https://codesandbox.io/s/anim-3d-obj-x360-7kiuhw)
+-  `Y360`: rotate 360 degrees on the y-axis: [demo](https://codesandbox.io/s/anim-3d-obj-y360-16lzeb?file=/src/App.tsx)
 -  fadeInkf: fade object in from 0 to 1 Opacity
 -  wobY: wobble on y-axis (degreesHi <-> degreesLow)
 -  wobX: wobble on x-axis (degreesHi <-> degreesLow)
