@@ -14,7 +14,7 @@ The program does the leg work with regard to calculating translationZ depth and 
 
 ## Config
 
-Animations are optional. Either or both of `anim1Specs` or `anim2Specs` can be applied to the object.
+Animations are optional. Either or both of `anim1` or `anim2` can be applied to the component.
 
 ```typescript
 const anim1 = {
@@ -36,27 +36,27 @@ const anim1 = {
 -  `X360`: rotate 360 degrees on the x-axis: [demo](https://codesandbox.io/s/anim-3d-obj-x360-7kiuhw)
 -  `Y360`: rotate 360 degrees on the y-axis: [demo](https://codesandbox.io/s/anim-3d-obj-y360-16lzeb)
 -  `fadeInkf`: fade object in from 0 to 1 Opacity: [demo](https://codesandbox.io/s/anim-3d-obj-fadeinkf-1fozww)
--  `wobY`: wobble on y-axis (degreesHi <-> degreesLow): [demo](https://codesandbox.io/s/anim-3d-obj-woby-tkoxms?file=/src/App.tsx)
--  `wobX`: wobble on x-axis (degreesHi <-> degreesLow)
--  `fwdx018`: spin object on x-axis from 0 degrees to 180 degrees
--  `fwdx1836`: spin object on x-axis from 180 degrees to 360 degrees
--  `fwdx09`: spin object on x-axis from 0 degrees to 90 degrees
--  `fwdx918`: spin object on x-axis from 90 degrees to 180 degrees
--  `fwdx1827`: spin object on x-axis from 180 degrees to 270 degrees
--  `fwdx2736`: spin object on x-axis from 270 degrees to 360 degrees
--  `fwdy018`: spin object on y-axis from 0 degrees to 180 degrees
--  `fwdy1836`: spin object on y-axis from 180 degrees to 360 degrees
--  `fwdy09`: spin object on y-axis from 0 degrees to 90 degrees
--  `fwdy918`: spin object on y-axis from 90 degrees to 180 degrees
--  `fwdy1827`: spin object on y-axis from 180 degrees to 270 degrees
--  `fwdy2736`: spin object on y-axis from 270 degrees to 360 degrees
--  `floatX`: float object so is not stationary
--  `floatShadow`: float object + add shadow
--  `pulseSM`: pulse object Small
--  `pulseMD`: pulse object Medium
--  `pulseLG`: pulse object Large
--  `swing`: Swing component
--  `swingDecay`: Swing component with decay
+-  `wobY`: wobble on y-axis (degreesHi <-> degreesLow): [demo](https://codesandbox.io/s/anim-3d-obj-woby-tkoxms)
+-  `wobX`: wobble on x-axis (degreesHi <-> degreesLow): [demo](https://codesandbox.io/s/anim-3d-obj-wobx-ldwek7)
+-  `fwdx018`: spin object on x-axis from 0 degrees to 180 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwd180-v90xyu)
+-  `fwdx1836`: spin object on x-axis from 180 degrees to 360 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwd1836-mtwuv9)
+-  `fwdx09`: spin object on x-axis from 0 degrees to 90 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwd09-84vocn)
+-  `fwdx918`: spin object on x-axis from 90 degrees to 180 degrees: [demo]()
+-  `fwdx1827`: spin object on x-axis from 180 degrees to 270 degrees: [demo]()
+-  `fwdx2736`: spin object on x-axis from 270 degrees to 360 degrees: [demo]()
+-  `fwdy018`: spin object on y-axis from 0 degrees to 180 degrees: [demo]()
+-  `fwdy1836`: spin object on y-axis from 180 degrees to 360 degrees: [demo]()
+-  `fwdy09`: spin object on y-axis from 0 degrees to 90 degrees: [demo]()
+-  `fwdy918`: spin object on y-axis from 90 degrees to 180 degrees: [demo]()
+-  `fwdy1827`: spin object on y-axis from 180 degrees to 270 degrees: [demo]()
+-  `fwdy2736`: spin object on y-axis from 270 degrees to 360 degrees: [demo]()
+-  `floatX`: float object so is not stationary: [demo]()
+-  `floatShadow`: float object + add shadow: [demo]()
+-  `pulseSM`: pulse object Small: [demo]()
+-  `pulseMD`: pulse object Medium: [demo]()
+-  `pulseLG`: pulse object Large: [demo]()
+-  `swing`: Swing component: [demo]()
+-  `swingDecay`: Swing component with decay: [demo]()
 -  `noAnim`: no animation place holder
 
 <>
