@@ -34,28 +34,30 @@ const anim1 = {
 `** ANIMATIONS`
 
 -  `X360`: rotate 360 degrees on the x-axis: [demo](https://codesandbox.io/s/anim-3d-obj-x360-7kiuhw)
--  `Y360`: rotate 360 degrees on the y-axis: [demo](https://codesandbox.io/s/anim-3d-obj-y360-16lzeb?file=/src/App.tsx)
--  fadeInkf: fade object in from 0 to 1 Opacity
--  wobY: wobble on y-axis (degreesHi <-> degreesLow)
--  wobX: wobble on x-axis (degreesHi <-> degreesLow)
--  fwdx018: spin object on x-axis from 0 degrees to 180 degrees
--  fwdx1836: spin object on x-axis from 180 degrees to 360 degrees
--  fwdx09: spin object on x-axis from 0 degrees to 90 degrees
--  fwdx918: spin object on x-axis from 90 degrees to 180 degrees
--  fwdx1827: spin object on x-axis from 180 degrees to 270 degrees
--  fwdx2736: spin object on x-axis from 270 degrees to 360 degrees
--  fwdy018: spin object on y-axis from 0 degrees to 180 degrees
--  fwdy1836: spin object on y-axis from 180 degrees to 360 degrees
--  fwdy09: spin object on y-axis from 0 degrees to 90 degrees
--  fwdy918: spin object on y-axis from 90 degrees to 180 degrees
--  fwdy1827: spin object on y-axis from 180 degrees to 270 degrees
--  fwdy2736: spin object on y-axis from 270 degrees to 360 degrees
--  floatX: float object so is not stationary
--  floatShadow: float object + add shadow
--  pulseSM: pulse object Small
--  pulseMD: pulse object Medium
--  pulseLG: pulse object Large
--  noAnim: no animation place holder
+-  `Y360`: rotate 360 degrees on the y-axis: [demo](https://codesandbox.io/s/anim-3d-obj-y360-16lzeb)
+-  `fadeInkf`: fade object in from 0 to 1 Opacity: [demo](https://codesandbox.io/s/anim-3d-obj-fadeinkf-1fozww)
+-  `wobY`: wobble on y-axis (degreesHi <-> degreesLow): [demo](https://codesandbox.io/s/anim-3d-obj-woby-tkoxms?file=/src/App.tsx)
+-  `wobX`: wobble on x-axis (degreesHi <-> degreesLow)
+-  `fwdx018`: spin object on x-axis from 0 degrees to 180 degrees
+-  `fwdx1836`: spin object on x-axis from 180 degrees to 360 degrees
+-  `fwdx09`: spin object on x-axis from 0 degrees to 90 degrees
+-  `fwdx918`: spin object on x-axis from 90 degrees to 180 degrees
+-  `fwdx1827`: spin object on x-axis from 180 degrees to 270 degrees
+-  `fwdx2736`: spin object on x-axis from 270 degrees to 360 degrees
+-  `fwdy018`: spin object on y-axis from 0 degrees to 180 degrees
+-  `fwdy1836`: spin object on y-axis from 180 degrees to 360 degrees
+-  `fwdy09`: spin object on y-axis from 0 degrees to 90 degrees
+-  `fwdy918`: spin object on y-axis from 90 degrees to 180 degrees
+-  `fwdy1827`: spin object on y-axis from 180 degrees to 270 degrees
+-  `fwdy2736`: spin object on y-axis from 270 degrees to 360 degrees
+-  `floatX`: float object so is not stationary
+-  `floatShadow`: float object + add shadow
+-  `pulseSM`: pulse object Small
+-  `pulseMD`: pulse object Medium
+-  `pulseLG`: pulse object Large
+-  `swing`: Swing component
+-  `swingDecay`: Swing component with decay
+-  `noAnim`: no animation place holder
 
 <>
 
