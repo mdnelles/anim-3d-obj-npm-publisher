@@ -30,6 +30,8 @@ export const AnimWrap = (props: AnimStylesProps) => {
     pulseSM,
     pulseMD,
     pulseLG,
+    swing,
+    swingDecay,
     noAnim,
   } = allAnims({ degreesHi: AS.degreesHi, degreesLow: AS.degreesLow });
 
@@ -57,6 +59,8 @@ export const AnimWrap = (props: AnimStylesProps) => {
   else if (AS.name === "pulseSM") theAnim = pulseSM;
   else if (AS.name === "pulseMD") theAnim = pulseMD;
   else if (AS.name === "pulseLG") theAnim = pulseLG;
+  else if (AS.name === "swing") theAnim = swing;
+  else if (AS.name === "swingDecay") theAnim = swingDecay;
   else theAnim = noAnim;
 
   const AnimWrapDiv: any = styled.div`

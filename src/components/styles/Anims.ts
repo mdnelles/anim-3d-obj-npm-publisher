@@ -8,6 +8,62 @@ interface AllAnimsProps {
 export const allAnims = (props: AllAnimsProps) => {
   const { degreesLow = 0, degreesHi = 0 } = props;
 
+  const swing = keyframes`
+    0% {
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
+        -webkit-transform: perspective(550px) rotateX(77deg);
+                transform: perspective(550px) rotateX(77deg);
+      }
+      50% {
+        -webkit-transform: perspective(550px) rotateX(-77deg);
+                transform: perspective(550px) rotateX(-77deg);
+      }
+      100% {
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
+        -webkit-transform: perspective(550px) rotateX(77deg);
+                transform: perspective(550px) rotateX(77deg);
+      }
+  `;
+
+  const swingDecay = keyframes`
+   0% {
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: perspective(550px) rotateX(77deg);
+            transform: perspective(550px) rotateX(77deg);
+    }  
+    20% {
+        -webkit-transform: perspective(550px) rotateX(-55deg);
+                transform: perspective(550px) rotateX(-55deg);
+    }
+    40% {
+        -webkit-transform: perspective(550px) rotateX(44deg);
+                transform: perspective(550px) rotateX(44deg);
+    }
+
+    60% {
+        -webkit-transform: perspective(550px) rotateX(-22deg);
+                transform: perspective(550px) rotateX(-22deg);
+    }
+
+    80% {
+        -webkit-transform: perspective(550px) rotateX(11deg);
+                transform: perspective(550px) rotateX(11deg);
+    }
+    100% {
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
+        -webkit-transform:  perspective(550px)  rotateX(0);
+                transform:  perspective(550px)  rotateX(0);
+    }
+    `;
+
   const X360 = keyframes`
    from {
       -webkit-transform: rotateX(360deg);
@@ -16,8 +72,7 @@ export const allAnims = (props: AllAnimsProps) => {
    to {
       -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg);
-   }
-}`;
+   }`;
 
   //////// Y360
   const Y360 = keyframes`
@@ -285,6 +340,8 @@ export const allAnims = (props: AllAnimsProps) => {
     pulseSM,
     pulseMD,
     pulseLG,
+    swing,
+    swingDecay,
     noAnim,
   };
 };
