@@ -126,5 +126,5 @@ const custom: object = {
          `,
       },
 ```
-#NPM Location
-https://www.npmjs.com/package/anim-3d-obj
+## NPM Location
+ - https://www.npmjs.com/package/anim-3d-obj
