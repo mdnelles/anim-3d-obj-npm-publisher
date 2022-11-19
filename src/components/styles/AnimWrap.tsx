@@ -35,8 +35,8 @@ export const AnimWrap = (props: AnimStylesProps) => {
     noAnim,
   } = allAnims({ degreesHi: AS.degreesHi, degreesLow: AS.degreesLow });
 
-  let theAnim: any = "noAnim";
-  // need to iterate through all animation posibilities and not use eval() to satisfy TS
+  let theAnim: string | any = "noAnim";
+
   if (AS.name === "X360") theAnim = X360;
   else if (AS.name === "Y360") theAnim = Y360;
   else if (AS.name === "fadeInkf") theAnim = fadeInkf;
