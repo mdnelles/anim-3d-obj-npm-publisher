@@ -8,7 +8,7 @@ import Face from "./Face";
 interface ObjProps {
   anim1?: object | undefined;
   anim2?: object | undefined;
-  children: any;
+  children?: any;
   depth?: number;
   global?: { border?: string; bgc?: string; opac?: number | string } | any;
   faces: {
