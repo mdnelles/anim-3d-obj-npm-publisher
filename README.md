@@ -65,7 +65,7 @@ const anim1 = {
 };
 ```
 
-### Faces
+### Faces:
 This is an array of objects containing the face used for a given component
 ```javascript
    export interface FaceType {
@@ -89,7 +89,7 @@ This is an array of objects containing the face used for a given component
    ];
 ```
 
-### Global (face)
+### Global (face):
 If the name parameter in the faces array is indicated (ie: "front") but `css` and / or `body` are not.  The `global default`(below) will satisfy those parameters.
 ```javascript
    interface GlobalType {
@@ -101,4 +101,7 @@ If the name parameter in the faces array is indicated (ie: "front") but `css` an
       css: 'color:red'
    };
 ```
+
+![all sides](https://github.com/mdnelles/anim-3d-obj-npm-publisher/blob/4a9769a6386a3b5425ede9a04b346d5461051ae0/ang1.png?raw=true)
+
  - https://www.npmjs.com/package/anim-3d-obj
