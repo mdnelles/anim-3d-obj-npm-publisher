@@ -4,36 +4,7 @@ import { ObjWrapper } from "./styles/Global";
 import { AnimWrap } from "./styles/AnimWrap";
 import { SceneStyle } from "./styles/Scene";
 import Face from "./Face";
-
-interface ObjProps {
-  anim1?: object | undefined;
-  anim2?: object | undefined;
-  children?: any;
-  depth?: number;
-  global?: { border?: string; bgc?: string; opac?: number | string } | any;
-  faces: {
-    front?: boolean | undefined;
-    back?: boolean | undefined;
-    left?: boolean | undefined;
-    right?: boolean | undefined;
-    top?: boolean | undefined;
-    top_rear?: boolean | undefined;
-    top_front?: boolean | undefined;
-    bottom?: boolean | undefined;
-    bottom_rear?: boolean | undefined;
-    bottom_front?: boolean | undefined;
-  };
-
-  height?: number | string;
-  custom?: object | string | undefined;
-  perspective?: string | number | undefined;
-  perspectiveOrigin?: string | undefined;
-  showCenterDiv?: string | number | boolean | undefined;
-  tranz?: number | undefined;
-  txt?: string | any;
-  width?: number;
-  zIndex?: number | undefined;
-}
+import { FaceType, ObjProps } from "./types";
 
 export default function (props: ObjProps): JSX.Element {
   let {
@@ -42,29 +13,23 @@ export default function (props: ObjProps): JSX.Element {
     width = 5,
     height = 5,
     depth = 5,
-    faces = { front: true },
     global = {},
-    custom = {},
-    tranz = (+height / 2) | 0,
+    faces,
     perspective,
     perspectiveOrigin,
     zIndex,
   } = props;
 
   // process config
-  const buildFace = (faceType: any): any => {
-    return (
-      <Face
-        width={width}
-        height={height}
-        depth={depth}
-        faceType={faceType}
-        id={faceType}
-        tranz={tranz}
-        global={global}
-        custom={custom}
-      />
-    );
+  const buildFace = (face: FaceType): any => {
+    const details = {
+      width,
+      height,
+      depth,
+      face,
+      global,
+    };
+    return <Face {...details} key={face.name} />;
   };
 
   return (
@@ -78,16 +43,9 @@ export default function (props: ObjProps): JSX.Element {
       <AnimWrap animSpecs={anim1}>
         <AnimWrap animSpecs={anim2}>
           <ObjWrapper>
-            {!!faces && !!faces.front ? buildFace("front") : null}
-            {!!faces && !!faces.right ? buildFace("right") : null}
-            {!!faces && !!faces.back ? buildFace("back") : null}
-            {!!faces && !!faces.left ? buildFace("left") : null}
-            {!!faces && !!faces.top ? buildFace("top") : null}
-            {!!faces && !!faces.bottom ? buildFace("bottom") : null}
-            {!!faces && !!faces.top_rear ? buildFace("top_rear") : null}
-            {!!faces && !!faces.top_front ? buildFace("top_front") : null}
-            {!!faces && !!faces.bottom_rear ? buildFace("bottom_rear") : null}
-            {!!faces && !!faces.bottom_front ? buildFace("bottom_front") : null}
+            {faces && faces[0]
+              ? faces.map((face) => (face.name ? buildFace(face) : null))
+              : null}
           </ObjWrapper>
         </AnimWrap>
       </AnimWrap>
