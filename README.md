@@ -12,25 +12,6 @@ The program does the leg work with regard to calculating translationZ depth and 
 -  [Parallel divs animated x and y axis in tandem](https://codesandbox.io/s/anim-3d-obj-2-sides-simple-4057y7)
 -  [Obj Skeleton](https://codesandbox.io/s/anim-3d-obj-skeleton-5dlk70)
 
-## Config
-
-Animations are optional. Either or both of `anim1` or `anim2` can be applied to the component.
-
-```typescript
-const anim1 = {
-   border: "", // while testing reveal the animation wrapper
-   degreesHi: -45, // degrees if spin
-   degreesLow: 45, // degrees if spin
-   delay: 0, // start delay in seconds
-   direction: "normal", //normal alternating reverse
-   duration: 8, // seconds
-   fillMode: "forwards", // none forwards backwards both
-   iterationCount: "infinite", // number or infinte
-   name: "Y360", // ** ANIMATIONS
-   timing: "ease-in-out", // linear ease ease-in-out
-};
-```
-
 `** ANIMATIONS`
 
 -  `fadeInkf`: fade object in from 0 to 1 Opacity: [demo](https://codesandbox.io/s/anim-3d-obj-fadeinkf-1fozww)
@@ -42,7 +23,6 @@ const anim1 = {
 -  `swing`: Swing component: [demo](https://codesandbox.io/s/anim-3d-obj-swing-snj8li)
 -  `swingDecay`: Swing component with decay: [demo](https://codesandbox.io/s/anim-3d-obj-swingdecay-cku0e1)
 -  `noAnim`: no animation place holder
-
 
 `X-AXIS Animations`
 -  `X360`: rotate 360 degrees on the x-axis: [demo](https://codesandbox.io/s/anim-3d-obj-x360-7kiuhw)
@@ -63,68 +43,60 @@ const anim1 = {
 -  `fwdy918`: spin object on y-axis from 90 degrees to 180 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwdy918-gnym88)
 -  `fwdy1827`: spin object on y-axis from 180 degrees to 270 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwdy1827-osskgx)
 -  `fwdy2736`: spin object on y-axis from 270 degrees to 360 degrees: [demo](https://codesandbox.io/s/anim-3d-obj-fwdy2736-rnbs2q)
--  
 
 
-<>
+## Config
+### Animations:
 
-GLOBAL CONFIG
+Animations are optional. Either or both of `anim1` or `anim2` can be applied to the component. Animations are applied to 2 wrapping divs respectively.
 
 ```typescript
-// EXAMPLE GLOBAL FACE CONFIG
-// This will be applied to all Faces that do not have their own custom config
-const global: object = {
-   // // face individual styles (over rides global)
-   css: `
-         border: 1px solid #fff;
-         background: rgb(2,0,36);
-         background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(141,191,249,.7) 100%);
-         color:white;
-         text-align:center;
-         line-height:10;
-         backface-visibility: visible;
-         font-family: Arial, Helvetica, sans-serif;
-         border-radius:5px;
-         `,
-   body: " ",
+const anim1 = {
+   border: "", // while testing reveal the animation wrapper
+   degreesHi: -45, // degrees if spin
+   degreesLow: 45, // degrees if spin
+   delay: 0, // start delay in seconds
+   direction: "normal", //normal alternating reverse
+   duration: 8, // seconds
+   fillMode: "forwards", // none forwards backwards both
+   iterationCount: "infinite", // number or infinte
+   name: "Y360", // ** ANIMATIONS (above)
+   timing: "ease-in-out", // linear ease ease-in-out
 };
 ```
 
-<>
+### Faces
+This is an array of objects containing the face used for a given component
+```javascript
+   export interface FaceType {
+      name?: string; // front,back,left,right,top,top_rear,top_front,bottom,bottom_rear,bottom_front
+      css?: string | undefined;
+      body?: any; // can be JSX Component | string | number
+   }
 
-CUSTOM CONFIG FOR INDIVIDUAL FACES
-
-```typescript
-const custom: object = {
-      // // face individual styles (over rides global)
-      front: {
-         css: ``,
-         body: <Login />,
+   const faces: FaceType[] = [
+      {
+         name: "back",
+         body: "BACK",
+         css: `background:rgba(22,22,22,.5)`,
       },
-      left: {
-         css: `
-         border: 1px solid #fff;
-         background: rgb(2,0,36);
-         color:white;
-         text-align: center;
-         line-height:8;`
-         body: " ",
+      {
+         name: "right",
+         body: "RIGHT",
+         css: `background:rgba(220,220,220,.5); 
+               border:1px solid #ddd`,
       },
-      right: {
-         css: ``,
-         body: " ",
-      },
-      back: {
-         css: ``,
-         body: <Logout />,
-      },
-      bottom: {
-         css: `
-         background-color:rgba(141,191,249,1);
-         -webkit-box-shadow: 0px 0px 23px 18px #858585;
-         box-shadow: 0px 0px 23px 18px #858585;
-         `,
-      },
+   ];
 ```
-## NPM Location
+
+### Global (face)
+   interface GlobalType {
+      css?: string;
+      body?: string;
+   }
+   const global: GlobalType = {
+      body: "BODY FOR FACE WHICH DOES NOT CONTAIN BODY",
+      css: 'color:red'
+   };
+
  - https://www.npmjs.com/package/anim-3d-obj
