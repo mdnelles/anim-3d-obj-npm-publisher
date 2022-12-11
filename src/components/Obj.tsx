@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ObjWrapper } from "./styles/Global";
 import { AnimWrap } from "./styles/AnimWrap";
 import { SceneStyle } from "./styles/Scene";

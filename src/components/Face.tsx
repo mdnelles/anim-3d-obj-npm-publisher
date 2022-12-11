@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { FaceType } from "./types";
 
@@ -22,8 +23,7 @@ export default function Face(props: FaceProps): JSX.Element {
   let transform;
   let tranz = +height / 2;
   const body = face.body ? face.body : global.body;
-  console.log("====props====" + face.name);
-  console.log(props);
+
   ////////////////////////////////////////////////////////////////////////////// BOTTOM
   if (face.name === "bottom") {
     tranz = +height - +depth / 2;
@@ -93,13 +93,7 @@ export default function Face(props: FaceProps): JSX.Element {
   } else {
     console.log(face.name + " is not a recognized face.name");
   }
-  console.log(".....css");
-  console.log(`${face.css || global.css}
-   width: ${width}px;
-   position: absolute;
-   height: ${height}px;
-   ${transform}
-`);
+
   const Specs: any = styled.section`
     ${face.css || global.css}
     width: ${width}px;
