@@ -90,6 +90,8 @@ This is an array of objects containing the face used for a given component
 ```
 
 ### Global (face)
+If the name parameter in the faces array is indicated (ie: "front") but `css` and / or `body` are not.  The `global default`(below) will satisfy those parameters.
+```javascript
    interface GlobalType {
       css?: string;
       body?: string;
@@ -98,5 +100,5 @@ This is an array of objects containing the face used for a given component
       body: "BODY FOR FACE WHICH DOES NOT CONTAIN BODY",
       css: 'color:red'
    };
-
+```
  - https://www.npmjs.com/package/anim-3d-obj
