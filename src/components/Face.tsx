@@ -19,7 +19,7 @@ export default function Face(props: FaceProps): JSX.Element {
     face,
     width = 100,
   } = props;
-  console.log(face);
+
   let transform;
   let tranz = +height / 2;
   const body = face.body ? face.body : global.body;
