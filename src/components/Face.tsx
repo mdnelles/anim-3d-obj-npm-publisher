@@ -12,6 +12,7 @@ interface FaceProps {
 }
 
 export default function Face(props: FaceProps): JSX.Element {
+  let display = true;
   let {
     depth = 10,
     global = { css: "", body: "" },
@@ -92,6 +93,7 @@ export default function Face(props: FaceProps): JSX.Element {
     transform = `transform: rotateY(-90deg) translateZ(${tranz}px);`;
   } else {
     console.log(face.name + " is not a recognized face.name");
+    display = false;
   }
 
   const Specs: any = styled.section`
@@ -102,5 +104,5 @@ export default function Face(props: FaceProps): JSX.Element {
     ${transform}
   `;
 
-  return <Specs>{body}</Specs>;
+  return display ? <Specs>{body}</Specs> : <></>;
 }
