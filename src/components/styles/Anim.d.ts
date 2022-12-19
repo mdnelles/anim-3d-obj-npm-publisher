@@ -11,6 +11,7 @@ export interface AnimSpecsType {
   duration?: number | string | undefined;
   fillMode?: string | undefined;
   iterationCount?: number | string | undefined;
+  animationPlayState?: string;
   name?: string | undefined;
   timing?: string | undefined;
 }
