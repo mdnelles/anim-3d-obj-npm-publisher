@@ -76,9 +76,9 @@ export const AnimWrap = (props: AnimStylesProps) => {
     -webkit-animation-name: ${theAnim};
     animation-name: ${theAnim};
     -webkit-animation-fill-mode: ${AS.fillMode};
+    animation-fill-mode: ${AS.fillMode};
     -webkit-animation-play-state: ${AS.animationPlayState};
     animation-play-state: ${AS.animationPlayState};
-    animation-fill-mode: ${AS.fillMode};
     animation-direction: ${AS.direction};
     -webkit-animation-direction: ${AS.direction};
     -webkit-animation-timing-function: ${AS.timing};

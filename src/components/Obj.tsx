@@ -21,7 +21,6 @@ export default function (props: ObjProps): JSX.Element {
 
   // process config
   const buildFace = (face: FaceType): any => {
-    console.log(face);
     const details = {
       width,
       height,

@@ -92,7 +92,7 @@ export default function Face(props: FaceProps): JSX.Element {
     }
     transform = `transform: rotateY(-90deg) translateZ(${tranz}px);`;
   } else {
-    console.log(face.name + " is not a recognized face.name");
+    //console.log(face.name + " is not a recognized face.name");
     display = false;
   }
 
