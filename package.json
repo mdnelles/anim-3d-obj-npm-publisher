@@ -10,7 +10,7 @@
       "type": "git",
       "url": "https://github.com/mdnelles/anim-3d-obj-npm-publisher.git"
    },
-   "homepage": "https://github.com/mdnelles/anim-3d-obj-npm-publisher.git",
+   "homepage": "https://mdnelles.github.io/a3o-playground/main",
     "version": "1.2.7",
    "description": "React library for creating 3D objects quickly.  Also these objects can be animated",
    "main": "dist/cjs/index.js",
