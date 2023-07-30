@@ -1,11 +1,11 @@
 {
    "name": "anim-3d-obj",
-   "version": "1.2.0",
+   "version": "1.2.1",
    "repository": {
       "type": "git",
       "url": "https://github.com/mdnelles/anim-3d-obj-npm-publisher.git"
    },
-   "homepage": "https://github.com/mdnelles/anim-3d-obj-npm-publisher.git",
+   "homepage": "https://mdnelles.github.io/a3o-playground/",
    "description": "React library for creating 3D objects quickly.  Also these objects can be animated",
    "mainOLD": "dist/cjs/index.js",
    "main": "dist/cjs/components/Obj.js",
