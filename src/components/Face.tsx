@@ -104,5 +104,5 @@ export default function Face(props: FaceProps): JSX.Element {
     ${transform}
   `;
 
-  return display ? <Specs>{body}</Specs> : <></>;
+  return display ? <Specs>{body}</Specs> : <div><div/>;
 }
